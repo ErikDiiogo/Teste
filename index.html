@@ -16,10 +16,6 @@
     font-weight: normal;
 }
 
-*{
-    margin: 0px; padding: 0px;
-}
-
 :root{
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -32,173 +28,138 @@
     --fonte-destaque: 'bebas neue', 'cursive'; 
     --fonte-android: 'Android', 'cursive';
 
+    *{
+    margin: 0px; padding: 0px;
+}
+  a.externo::after{
+  content: '\00A0\1F517';
+      }
+  
 body{
-   
     background-color: #c5ebd6;
-    
     font-family: var(--fonte-padrao);
 }
 
 header {
- 
     background-image: linear-gradient(to bottom, #2fa866, #063d1e);
- 
-    min-height: 150px;
- 
-    text-align: center;
- 
+    min-height: 150px; 
+    text-align: center; 
     padding-top: 40px;
 
-
-header  p {
-  
-    font-family: var(--fonte-padrao);
- 
-    font-size: 1.2em;
- 
+header  p {  
+    font-family: var(--fonte-padrao); 
+    font-size: 1.2em; 
     color: white;
-
     max-width: 600px;
-
     padding-right: 10px;
-
-    padding-left: 10px;
- 
-    margin: auto;
- 
+    padding-left: 10px; 
+    margin: auto; 
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
 
-nav{
-   
-    background-color: var(--cor5);
-   
-    padding: 10px;
-    
+nav{   
+    background-color: var(--cor5);   
+    padding: 10px;    
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 }
     
   nav  a{
- 
-      color: white;
-  
-      padding: 10px;
-  
-      border-radius: 5px;
- 
-      text-decoration: none;
-  
-      font-weight: bold;
- 
+      color: white;  
+      padding: 10px;  
+      border-radius: 5px; 
+      text-decoration: none;  
+      font-weight: bold; 
       transition-duration: .5s;
    }
     
-  nav a:hover{
- 
+  nav a:hover{ 
    background-color: var(--cor3);
-
    color: var(--cor5);
   }
 
-main {
-  
-    background-color: white;
-  
-    margin-bottom: 30px;
-   
-    margin: auto;
-  
-    min-width: 300px;
-  
-    max-width: 1000px;
-  
-    padding: 20px;
-  
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
-   
+main {  
+    background-color: white  
+    margin-bottom: 30px;   
+    margin: auto;  
+    min-width: 300px;  
+    max-width: 1000px;  
+    padding: 20px;  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);   
     border-bottom-left-radius: 10px;
-  
     border-bottom-right-radius: 10px;
 }
-main h1 {
-   
-    color: #1a5c37;
     
+main h1 {
+    color: #1a5c37;    
     font-family: Android, cursive;
 }
 
-h2 {
-   
-    font-family: 'Android', 'cursive';
-   
-    color: var(--cor3);
-   
-    font-size: 1.2em;
-   
-    background-image: linear-gradient(to right, #83e1ad, transparent);
-    
+h2 {  
+    font-family: 'Android', 'cursive';   
+    color: var(--cor3);   
+    font-size: 1.2em;   
+    background-image: linear-gradient(to right, #83e1ad, transparent);    
     text-indent: 8px;
     
-    main p {
-
+main p {
   margin: 15px 0px;
-
   text-align: justify;
-
   text-indent: 30px;
-
   font-size: 1em;
-
   line-height: 1em;
-
 }
 
 main strong{
-
   color: #1a5c37;
-
   font-weight: bold;
-
 }
 
 main a {
-
   text-decoration: none;
-
   font-weight: bold;
-
   color: #1a5c37;
-
   background-color: #3ddc84;
-
   padding: 2px 8px;
-
 }
 
 main a:hover{
-
   text-decoration: underline;
-
-  color: var(--cor4);
-    
+  color: var(--cor4);    
 }
+    
 main img{
-
     width: 100%;
 }
+    
 main img.pequena{
-     
-   max-width: 350px;
- 
-    display: block;
- 
+   max-width: 350px; 
+    display: block; 
     margin: auto;
 }
-      
+    
+ aside{
+  background-color: var(--cor1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3{
+  background-color: var(--cor5);
+  color: white;
+  padding: 10px;
+  margin: -10px, -10px, 0px, -10px;
+  border-radius: 10px, 10px, 0px, 0px;
+}
+    
+aside > ul{
+  list-style-position: '\2714\00A0\00A0';
+  list-style-position: inside;
+  columns: 2;
+    }
+    
 footer{
-   
-    background-color: var(--cor5);
-   
+    background-color: var(--cor5);   
     color: white;
 }
     
@@ -233,7 +194,7 @@ footer{
   </h2>
 
   <p>
-    A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/amp/">Dan Morrill</a>. Ele conta que abriu o <a href="https://inkscape.org/pt/" target="_blank">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.
+    A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/amp/" target="_blank" class="externa">Dan Morrill</a>. Ele conta que abriu o <a href="https://inkscape.org/pt/" target="_blank">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.
   </p>
    <picture>
    <source media="(max-width: 670px)" srcset="dan-droids-pq.png">
@@ -248,7 +209,7 @@ footer{
       </h2>
 
       <p>
-        A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="https://www.irinablok.com/" target="_blank">Irina Blank</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
+        A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="https://www.irinablok.com/" target="_blank" class="externa">Irina Blank</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
       </p>
        <picture>
        <source media="(max-width:670px)" srcset="irina-blok-pq.jpg">
@@ -298,7 +259,7 @@ footer{
     </p>
 
     <p>
-      Acesse aqui o site <a href="https://www.android.com/intl/en_uk/history/">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android. 
+      Acesse aqui o site <a href="https://www.android.com/intl/en_uk/history/" target="_blank" class="externa">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android. 
     </p>
   </aside>
 
